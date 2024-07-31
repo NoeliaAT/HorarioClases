@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace Aplicacion.Dominio;
 
-namespace Aplicacion.Dominio
+public class Aula
 {
-    public class Aula
-    {
-        
-    }
+    public Guid IdAula { get; set; } = Guid.NewGuid();
+    public string Ubicacion { get; set; } = string.Empty;
+    public int Capacidad { get; set; }
 }

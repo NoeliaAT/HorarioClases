@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace Aplicacion.Dominio;
 
-namespace Aplicacion.Dominio
+public class Horario
 {
-    public class Horario
-    {
-        
-    }
+    public Guid IdHorario { get; set; } = Guid.NewGuid();
+    public string DiaSemana { get; set; } = string.Empty;
+    public int Hora { get; set; }
 }

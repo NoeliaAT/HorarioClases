@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace Aplicacion.Dominio;
 
-namespace Aplicacion.Dominio
+public class Turno
 {
-    public class Turno
-    {
-        
-    }
+    public Guid IdTurno { get; set; } = Guid.NewGuid();
+    public string Turnos { get; set; } = string.Empty;
 }
